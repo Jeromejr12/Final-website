@@ -1,13 +1,13 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #008C45; /* Eco-friendly green */
+  background-color: #4CAF50; /* Green for EcoWear */
   padding: 10px;
 }
 
@@ -31,8 +31,9 @@ a:hover {
   color: #FFD700; /* Gold color for hover */
 }
 
+/* Hero Section */
 #hero {
-  background-image: url('hero-image.jpg');
+  background-image: url('images/hero-image.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -40,18 +41,12 @@ a:hover {
   padding: 100px 20px;
 }
 
-#hero .button {
-  background-color: #FFD700;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.hero-content h1 {
+  font-size: 3rem;
 }
 
-#hero .button:hover {
-  background-color: #FFA500; /* Hover color */
+#features {
+  padding: 50px;
 }
 
 .product-gallery {
@@ -68,20 +63,53 @@ a:hover {
   border-radius: 8px;
 }
 
-.product-card:hover {
-  background-color: #e2e2e2;
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
+.product-card:hover {
+  background-color: #e2e2e2;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+button {
+  background-color: #FFD700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #FFA500;
+}
+
+/* Footer Styles */
 footer {
-  background-color: #008C45;
+  background-color: #4CAF50;
   color: white;
   text-align: center;
   padding: 10px;
 }
 
-/* Media Queries for Responsiveness */
+.social-media a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .product-gallery {
     flex-direction: column;
   }
 }
+
